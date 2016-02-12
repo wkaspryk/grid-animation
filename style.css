@@ -1,0 +1,138 @@
+body {
+	width: 1381px;
+	margin: 0 auto;
+	padding-top: 10%;
+}
+
+.container {
+	width: 88%;
+	max-height: 600px;
+	overflow: scroll;
+	float: left;
+	background-color: #EFEFEF;
+	box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    box-shadow: -2px 3px 5px -3px rgba(0,0,0,0.4);
+}
+
+.side {
+	width: 12%;
+	min-height: 233px;
+	float: left;
+	box-sizing: border-box;
+	padding: 15px;
+	background-color: #DADADA;
+	box-shadow: -2px 3px 5px -3px rgba(0,0,0,0.4);
+}
+
+button {
+	display: block;
+	margin: 10px 0;
+	width: 100%;
+	background-color: #007EFF;
+	color: white;
+	border: none;
+	padding: 8px;
+	font-size: 1.2rem;
+    box-shadow: -2px 3px 5px -3px rgba(0,0,0,0.4);
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+}
+
+button:hover {
+	background-color: #005AFF;
+}
+
+button:focus {
+	outline: none;
+}
+
+.active {
+	background-color: #005AFF;
+}
+
+.block {
+	height: 163px;
+    width: 14%;
+    background-color: #DADADA;
+    margin: 15px;
+    -webkit-transition: all .8s ease; /* Safari and Chrome */
+    border-radius: 4px;
+    position: relative;
+    box-shadow: -2px 3px 5px -3px rgba(0,0,0,0.4);
+}
+
+.block img {
+	width: 100%;
+	border-radius: 4px 4px 0 0;
+}
+
+.block img.portrait {
+	height: 85%;
+	width: auto;
+	margin: 0 auto;
+    border-radius: 0;
+	position: absolute;
+    right: 20%;
+    left: 20%;
+}
+
+.controls {
+	height: 15%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.controls p {
+    background-color: #ADADAD;
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+    float: left;
+    box-sizing: border-box;
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+}
+
+.controls p:hover {
+    background-color: #656565 !important;
+    cursor: pointer;
+}
+
+.controls p:last-child {
+    background-color: #8B8B8B;
+    width: 50%;
+    
+    border-radius: 0 0 4px 0;
+}
+
+.controls p:first-child {
+    border-radius: 0 0 0 4px;
+    line-height: 0.55;
+    font-size: 2rem;
+}
+
+.counter {
+	height: 30px;
+    width: 30px;
+    border: 2px solid #007EFF;
+    border-radius: 4px;
+    color: #007EFF;
+    position: absolute;
+    top: -11px;
+    right: -11px;
+    text-align: center;
+    background: white;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 4px;
+    font-family: sans-serif;
+    display: none;
+}
